@@ -1,24 +1,28 @@
 \version "2.22.1"
 \include "common.ly"
 
-
 \header {
     title = "Glade jul"
-    composer = "Rune Flobakk (bearb.)"
+    composer = "Franz Xaver Gruber"
+    arranger = "Rune Flobakk (bearb.)"
     tagline = ##f
+    instrument = "Piano"
 }
+
 
 signature = {
     \key ees \major
     \time 3/4
 }
 
-melody = {
+melodyPartOne = {
     bes4.  c8 bes4  g2.
     bes4.  c8 bes4  g2.
     f'2       f4    d2.
     ees2      ees4  bes2.
+}
 
+melodyPartTwo = {
     \repeat unfold 2 {
         c2       c4    ees4.  d8 c4
         bes4. c8 bes4  g2.
@@ -31,7 +35,6 @@ melody = {
     ees1.
 }
 
-
 bass = {
     \repeat unfold 11 { ees2. }
     ees4 f g
@@ -40,30 +43,59 @@ bass = {
     aes    a        bes c2 e,4
 
     f2.    bes2  b4 c2.  a
-    bes,   bes   ees     ees
+    bes,   bes'  ees,    ees
 }
 
+arpeggioBase = {r8 bes,  bes' f4 g8}
 
+arpeggioAccomp = {
+    \arpeggioBase
+    r  bes,  bes' f  f'4
+    r8 bes,, bes' f4 g8
+    r  bes,  ees' f,  f' bes,
+}
+
+pedal = {
+    \set pedalSustainStyle = #'bracket
+    s2.\sustainOn s2.\sustainOff\sustainOn s2.\sustainOff\sustainOn
+
+    \once \override PianoPedalBracket.edge-height = #'(1.0 . 0.0)
+    s4\sustainOff\sustainOn_\pedSimile
+}
 
 
 \score {
     \new PianoStaff <<
     	\new Staff = "right hand" {
             \tempo "Andante" 4 = 70
-    	    \clef treble
+    	    \clef bass
             \signature
 
-            R2.*4
-            \relative bes' \melody
+            s2.*4
+            \clef treble
+            \relative bes' \melodyPartOne
+            \relative bes' \melodyPartTwo
             \bar "|."
     	}
 
     	\new Staff = "left hand" {
             \clef bass
     	    \signature
-
-            \relative ees, \bass
+            <<
+                \relative {
+                    \change Staff = "right hand" \stemDown \arpeggioAccomp
+                    \change Staff = "left hand" \stemUp
+                    \arpeggioAccomp
+                    \transpose ees bes \relative { \arpeggioBase \arpeggioBase }
+                    \arpeggioBase
+                    r8 g^\rightHand <aes ees'> ees <f bes ees>4
+                }
+                \\
+                \relative ees, \bass
+            >>
         }
+
+        \new Dynamics \pedal
     >>
 
 	\layout {}
