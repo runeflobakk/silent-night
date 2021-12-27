@@ -29,10 +29,14 @@ melodyPartTwo = {
     }
 
     f'4.  f8 f4    aes4  f  d
-    ees2.^\rit          g\fermata
+    ees2._\rit          g^\fermata
 
     ees4.^\atempo  bes8 g4 bes4.    aes8 f4
     ees1.
+}
+
+bellResponse = {
+    bes4\(^\ppp g g aes2\)
 }
 
 bass = {
@@ -73,8 +77,13 @@ pedal = {
 
             s2.*4
             \clef treble
+
             \relative bes' \melodyPartOne
-            \relative bes' \melodyPartTwo
+            <<
+                \magnifyMusic 0.63 { s2.*3 r4 \stemUp \relative bes'' \bellResponse }
+                \\
+                \stemUp \relative bes' \melodyPartTwo
+            >>
             \bar "|."
     	}
 
