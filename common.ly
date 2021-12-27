@@ -4,7 +4,7 @@
     left-margin = 15\mm
     bottom-margin = 20\mm
     system-system-spacing =
-        #'((basic-distance . 16)
+        #'((basic-distance . 17)
            (minimum-distance . 8)
            (padding . 1)
            (stretchability . 60))
