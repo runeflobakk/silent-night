@@ -81,7 +81,11 @@ pedal = {
                     \voiceOne \melody
                 }
                 \new Voice \relative bes' {
-                    \voiceTwo { s2.*5 f2. s2.*2 bes,4 c2 g'4. f8 ees4 s2. }
+                    \voiceTwo {
+                        s2.*5 f2. s2.
+                        r8 \clef bass g, <aes ees'> ees <bes' ees f,>4\glissando
+                        \clef treble bes4 c2 g'4. f8 ees4 s2.
+                    }
                     \voiceThree \magnifyMusic 0.67 \relative bes'' \bellResponse
                     \voiceTwo {
                         <c' fis,>2. s2. f,8 g, \< c f <e c g> c \!
@@ -104,7 +108,7 @@ pedal = {
                     \arpeggioAccomp
                     \transpose ees bes \relative { \arpeggioBase \arpeggioBase }
                     \arpeggioBase
-                    r8 g^\rightHand <aes ees'> ees <f bes ees>4
+                    s2.
                     r8 ees ees' g,4 aes8 r8 ees c' bes aes4
                     \repeat unfold 2 { r8 ees bes' f4  g8 }
                     r8 ees ees' g,4 aes8 r8 fis c' d ees c
