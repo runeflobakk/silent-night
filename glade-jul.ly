@@ -44,13 +44,13 @@ bass = {
     ees4 f g
 
     aes2.  aes      g   g
-    aes    a        bes c2 e,4
+    aes    a        bes c2 <e, e,>4
 
-    f2.    bes2  b4 c2.  a
-    bes,   bes'  ees,    ees
+    <f f,>2.    <bes bes,>2  <b b,>4 <c c,>2.  a
+    <bes, bes'>   bes'  ees,    ees
 }
 
-arpeggioBase = {r8 bes,  bes' f4 g8}
+arpeggioBase = { r8 bes,  bes' f4 g8 }
 
 arpeggioAccomp = {
     \arpeggioBase
