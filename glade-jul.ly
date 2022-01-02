@@ -44,7 +44,7 @@ bass = {
     aes2.  aes      g   g
     aes    a        bes c2 <e, e,>4
 
-    <f f,>2.    <bes bes,>2  <b b,>4 <c c,>2.  a'_\fermata
+    <f f,>2.    <bes bes,>2  <b b,>4 <c c,>2.  a'-5_\fermata
     <bes,, bes'>   bes'  ees,    ees
 }
 
@@ -83,8 +83,10 @@ pedal = {
                 \new Voice \relative bes' {
                     \voiceTwo {
                         s2.*5 f2. s2.
-                        r8 \clef bass g, <aes ees'> ees <bes' ees f,>4\glissando
-                        \clef treble bes4 c2 g'4. f8 ees4 s2.
+                        r8 \clef bass g,-1 <aes-2 ees'-5> ees-1 <bes'-3 ees-5 f,-1>4\glissando
+                        \clef treble
+                            bes4-1_\markup { \fontsize #-3.5 "(L.H.)" }
+                            c2-2 g'4. f8 ees4 s2.
                     }
                     \voiceThree \magnifyMusic 0.67 \relative bes'' \bellResponse
                     \voiceTwo {
@@ -117,12 +119,12 @@ pedal = {
                     \transpose ees bes \relative { \arpeggioBase \arpeggioBase }
                     \arpeggioBase
                     s2.
-                    r8 ees ees' g,4 aes8 r8 ees c' bes aes4
+                    r8 ees-3 ees'-1 g,4 aes8 r8 ees c' bes aes4
                     \repeat unfold 2 { r8 ees bes' f4  g8 }
                     r8 ees ees' g,4 aes8 r8 fis c' d ees c
                     r8 ees, bes' f4  g8 s2.
                     r8 c, f g4 aes8 r8 f bes r4.
-                    r8 ees, g bes c d ees2.
+                    r8 ees,-3 g-1 bes-3 c-2 d-1 ees2.-2
                     r8 ees, bes' f4  g8
                     aes2.
                     \arpeggioBase \arpeggioBase
