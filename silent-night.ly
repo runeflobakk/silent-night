@@ -2,9 +2,9 @@
 \include "defs.ily"
 
 \header {
-    title = "Glade jul"
+    title = "Silent Night"
     composer = "Franz Xaver Gruber"
-    arranger = "Rune Flobakk (bearb.)"
+    arranger = "Rune Flobakk (arr.)"
     tagline = ##f
     instrument = "Piano"
 }
