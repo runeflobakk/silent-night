@@ -16,21 +16,21 @@ signature = {
 }
 
 melody = {
-    bes4.  c8 bes4  g2.
-    bes4.  c8 bes4  g2.
-    f'2       f4    d2.
-    ees2      ees4  bes2.
+    bes4.( c8 bes4  g2.)
+    bes4.( c8 bes4  g2.)
+    f'2(      f4    d2.)
+    ees2(     ees4  bes2.)
 
     \repeat unfold 2 {
-        c2       c4    ees4.  d8 c4
-        bes4. c8 bes4  g2.
+        c2(      c4    ees4.  d8 c4
+        bes4. c8 bes4  g2.)
     }
 
-    f'2 f4       aes4.  f8  d4
-    ees2._\rit   g^\fermata
+    f'2(f4       aes4.  f8  d4
+    ees2._\rit   g^\fermata)
 
-    ees4.^\atempo  bes8 g4 bes4.    aes8 f4
-    ees2.~ 2.
+    ees4.^\atempo( bes8 g4 bes4.    aes8 f4
+    ees2.~ 2.)
 }
 
 bellResponse = {
