@@ -30,7 +30,7 @@ melody = {
     ees2._\rit   g^\fermata
 
     ees4.^\atempo  bes8 g4 bes4.    aes8 f4
-    ees1.
+    ees2.~ 2.
 }
 
 bellResponse = {
