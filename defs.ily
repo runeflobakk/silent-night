@@ -1,3 +1,5 @@
+% SPDX-License-Identifier: Apache-2.0 OR CC-BY-4.0
+
 \paper {
     left-margin = 15\mm
     bottom-margin = 20\mm

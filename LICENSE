@@ -1,0 +1,16 @@
+Copyright 2022 Rune Flobakk
+
+SPDX-License-Identifier: Apache-2.0 OR CC-BY-4.0
+
+The contents and built (derivated) artifacts of this repository
+are dual-licensed.
+
+It is suggested that the source files and other text files are
+licensed under Apache License Version 2.0 [1], and the built score
+and arrangement itself is licensed under Creative Commons
+Attribution 4.0 [2], but you are free to choose between these two
+licenses as you see fit.
+
+
+[1] https://www.apache.org/licenses/LICENSE-2.0
+[2] https://creativecommons.org/licenses/by/4.0/
