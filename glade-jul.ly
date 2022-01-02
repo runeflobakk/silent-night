@@ -69,7 +69,7 @@ pedal = {
 \score {
     \new PianoStaff <<
     	\new Staff = "right hand" {
-            \tempo "Andante" 4 = 70
+            \tempo "Adagio" 4 = 70
     	    \clef bass
             \signature
 
