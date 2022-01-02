@@ -1,5 +1,5 @@
 \version "2.22.1"
-\include "common.ly"
+\include "defs.ily"
 
 \header {
     title = "Glade jul"

@@ -1,5 +1,3 @@
-\version "2.22.1"
-
 \paper {
     left-margin = 15\mm
     bottom-margin = 20\mm
