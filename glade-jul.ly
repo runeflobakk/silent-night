@@ -35,8 +35,10 @@ melodyPartTwo = {
     ees1.
 }
 
+melody = { \melodyPartOne \melodyPartTwo }
+
 bellResponse = {
-    bes4\(^\ppp g g aes2\)
+    r4 bes4\(^\ppp g g aes2\)
 }
 
 bass = {
@@ -78,11 +80,14 @@ pedal = {
             s2.*4
             \clef treble
 
-            \relative bes' \melodyPartOne
             <<
-                \magnifyMusic 0.63 { s2.*3 r4 \stemUp \relative bes'' \bellResponse }
-                \\
-                \stemUp \relative bes' \melodyPartTwo
+                \new Voice \relative bes' {
+                    \voiceOne \melody
+                }
+                \new Voice \relative bes' {
+                    \voiceTwo { s2.*5 f2. s2.*2 }
+                    s2.*3 \voiceThree \magnifyMusic 0.67 \relative bes'' \bellResponse
+                }
             >>
             \bar "|."
     	}
