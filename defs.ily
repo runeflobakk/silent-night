@@ -18,3 +18,9 @@ pedSimile = \markup { \fontsize #-3 \italic "Ped. simile." }
 
 rightHand = \markup { \italic \fontsize#-2 "m.d." }
 leftHand = \markup { \italic \fontsize#-2 "m.s." }
+
+copyrightSign = \markup \char ##x00A9
+emdash = \markup \char ##x2014
+
+licenseCc = "Creative Commons Attribution 4.0"
+licenseApache = "Apache License Version 2.0"

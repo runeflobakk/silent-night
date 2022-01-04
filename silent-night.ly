@@ -9,6 +9,9 @@
     arranger = "Rune Flobakk (arr.)"
     tagline = ##f
     instrument = "Piano"
+    copyright = \markup {
+        \copyrightSign "2022 Rune Flobakk " \emdash " Licensed under " \licenseCc
+    }
 }
 
 

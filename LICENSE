@@ -9,7 +9,9 @@ It is suggested that the source files and other text files are
 licensed under Apache License Version 2.0 [1], and the built score
 and arrangement itself is licensed under Creative Commons
 Attribution 4.0 [2], but you are free to choose between these two
-licenses as you see fit.
+licenses as you see fit. The score is built with a Creative Commons
+license notice text, but may thus be edited to instead refer to the
+Apache License, if desired.
 
 
 [1] https://www.apache.org/licenses/LICENSE-2.0
