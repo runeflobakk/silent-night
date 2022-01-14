@@ -1,6 +1,6 @@
 % SPDX-License-Identifier: Apache-2.0 OR CC-BY-4.0
 
-\version "2.22.1"
+\version "2.22.0"
 \include "defs.ily"
 
 \header {
