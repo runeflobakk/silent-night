@@ -6,7 +6,16 @@ jobs:
     steps:
     - name: Check out repository
       uses: actions/checkout@v2
+    - name: Set ly_revision environment variable
+      run: echo "ly_revision=$(git describe --exact-match --tags 2> /dev/null || git rev-parse --short HEAD)" >> $GITHUB_ENV
+    - name: Echo ly_revision
+      run: echo "${{ env.ly_revision }}"
     - name: Generate PDF music sheets
       uses: alexandre-touret/lilypond-github-action@master
       with:
-        args: -V --include=/github/workspace --pdf silent-night.ly
+        args: >
+          --verbose
+          --include=/github/workspace
+          --output=/github/workspace
+          --pdf
+          silent-night.ly

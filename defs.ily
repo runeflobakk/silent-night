@@ -10,6 +10,14 @@
            (stretchability . 60))
 }
 
+revision = #(let
+    ((revision (getenv "ly_revision")))
+    (if (not revision)
+        (string-append "unknown (" (strftime "%FT%T%z" (localtime (current-time))) ")")
+        revision
+        )
+    )
+
 rit = \markup { \italic "rit." }
 
 atempo = "a tempo"
