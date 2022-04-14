@@ -16,7 +16,7 @@ jobs:
         args: >
           --verbose
           --include=/github/workspace
-          --output=/github/workspace
+          --output=/github/workspace/silent-night
           --pdf
           silent-night.ly
     - name: Release
