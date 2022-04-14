@@ -1,6 +1,8 @@
 % SPDX-License-Identifier: Apache-2.0 OR CC-BY-4.0
 
-\version "2.22.1"
+\version "2.22.0"
+#(use-modules (guile-user))
+
 \include "defs.ily"
 
 \header {
@@ -9,8 +11,11 @@
     arranger = "Rune Flobakk (arr.)"
     tagline = ##f
     instrument = "Piano"
-    copyright = \markup {
-        \copyrightSign "2022 Rune Flobakk " \emdash " Licensed under " \licenseCc
+    copyright = \markup { \smaller
+        \column {
+            \center-align \line { \copyrightSign "2022 Rune Flobakk" \emdash "Licensed under" \licenseCc }
+            \center-align \line { "Revision:" \revision }
+        }
     }
 }
 
