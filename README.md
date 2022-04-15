@@ -1,3 +1,7 @@
+[![Download sheet music](https://img.shields.io/badge/Download-PDF-red.svg)](releases/download/latest/silent-night.pdf)
+[![Creative Commons
+Attribution 4.0](https://i.creativecommons.org/l/by/4.0/80x15.png)](https://creativecommons.org/licenses/by/4.0/)
+
 # Silent Night piano arrangement
 
 Here you can download a free arrangement for piano of the classic Christmas carol [Silent Night](https://en.wikipedia.org/wiki/Silent_Night) as sheet music.
